@@ -38,16 +38,16 @@ document.addEventListener("click", (event) => {
     }
     document.querySelector("#number").innerText += btnValue;
     valueLangth++;
-    if (btnValue == "endCall") {
-      setTimeout(() => {
-        document.getElementById("options").style.display = "none";
-        document.getElementById("buttons").style.display = "grid";
-        document.getElementById("calling").style.display = "none";
-        document.getElementById("number").innerText = "";
-        clearInterval(timeoutId);
-        callAudio.pause();
-        count = 0;
-      });
-    }
+  }
+  if (btnValue == "endCall") {
+    setTimeout(() => {
+      document.getElementById("options").style.display = "none";
+      document.getElementById("buttons").style.display = "grid";
+      document.getElementById("calling").style.display = "none";
+      document.getElementById("number").innerText = "";
+      clearInterval(timeoutId);
+      callAudio.pause();
+      count = 0;
+    },1000);
   }
 });

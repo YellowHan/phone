@@ -26,21 +26,19 @@ body {
   height: 15vh;
   position: relative;
 }
-#middle input {
+#middle p {
+  margin: 0px;
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 100%;
   font-size: 2.5rem;
   text-align: center;
-  background: none;
-  border: none;
   color: white;
 }
 #calling {
   position: absolute;
-  top: 80%;
+  top: 60%;
   left: 50%;
   transform: translateX(-50%);
 }

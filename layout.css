@@ -34,6 +34,9 @@ body {
   font-size: 35px;
   text-align: center;
   color: white;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
 }
 #calling {
   position: absolute;
